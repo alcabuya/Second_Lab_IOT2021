@@ -37,8 +37,7 @@ function displayheader(){
     
 }
 function displayjson(jsondata,quantity){
-    console.log(jsondata[0]);
-    console.log(quantity);
+    
     for(i = 0;i<quantity;i++){
         var table = document.getElementById("datadisp");
         var newRow = table.insertRow();
