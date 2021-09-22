@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Second lab Alberto Cabuya</title>      
+        <style >
+            table,  th, td{
+                border: 1px solid gray;
+                border-collapse: collapse;
+            }
+            tr:first-child{
+                text-align: center;
+            }
+            tr:nth-child(even){
+                background-color: rgb(71, 75, 78);
+                color: lightyellow;
+            }
+            #submit{
+                background-color: rgb(41, 41, 228);
+                border:wheat;
+                text-align: center;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Quantity of registers</h3>
+        <label for="register_quant"></label><input type="number" min="0" max="5000" value="0" id="register_quant">
+        <br>
+        <button type="button" id="submit">See registers</button>
+        <div id="datafetched"></div>
+        <table id="datadisp" style="width: 100%;">
+            
+        </table>
+        <script src="fetch.js"></script>
+    </body>
+</html>
