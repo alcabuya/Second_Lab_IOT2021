@@ -9,13 +9,9 @@ function dofetch(){
     //console.log(quantity.value);
     deleteTableContent();
     displayheader();
-    
-    document.getElementById("datafetched");
-       
-            
-            fetch('https://jsonplaceholder.typicode.com/photos')
-            .then(response => response.json())
-            .then(json =>  displayjson(json, quantity.value));        
+        fetch('https://jsonplaceholder.typicode.com/photos')
+        .then(response => response.json())
+        .then(json =>  displayjson(json, quantity.value));        
       
      
 
